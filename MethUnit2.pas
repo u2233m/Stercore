@@ -1,0 +1,75 @@
+unit MethUnit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.DBCtrls;
+
+type
+  TMethForm2 = class(TForm)
+    DBMemo1: TDBMemo;
+    DBMemo2: TDBMemo;
+    DBMemo3: TDBMemo;
+    Button1: TButton;
+    Button2: TButton;
+    DBMemo4: TDBMemo;
+    Button3: TButton;
+    DBMemo5: TDBMemo;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Result;
+  private
+  res:integer;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MethForm2: TMethForm2;
+
+implementation
+uses DataUnit;
+{$R *.dfm}
+
+procedure TMethForm2.Button1Click(Sender: TObject);
+begin
+  res:=res+1;
+  DataModule1.ADOTable3.Next;
+  if DataModule1.ADOTable3.Eof then
+    begin
+      Result;
+    end;
+end;
+
+procedure TMethForm2.Button2Click(Sender: TObject);
+begin
+  res:=res+2;
+  DataModule1.ADOTable3.Next;
+  if DataModule1.ADOTable3.Eof then
+    begin
+      Result;
+    end;
+end;
+
+procedure TMethForm2.Button3Click(Sender: TObject);
+begin
+  res:=res+3;
+  DataModule1.ADOTable3.Next;
+  if DataModule1.ADOTable3.Eof then
+    begin
+      Result;
+    end;
+end;
+
+procedure TMethForm2.Result;
+begin
+  DataModule1.ADOTable1.Edit;
+  DataModule1.ADOTable1.Fields[8].AsInteger:=res;
+  DataModule1.ADOTable1.Post;
+  Close;
+end;
+
+end.

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.788,D:\Edu\КП\App\Unit2.pas=D:\Edu\КП\App\DescriptionUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.090,D:\Edu\КП\App\Unit2.pas=D:\Edu\КП\App\MethUnit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.074,D:\Edu\КП\App\Unit2.pas=D:\Edu\КП\App\MethUnit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.196,D:\Edu\КП\App\Unit2.pas=D:\Edu\КП\App\MethUnit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.178,=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.300,=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.656,=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.372,D:\Edu\КП\App\Unit2.pas=D:\Edu\КП\App\RegUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.372,D:\Edu\КП\App\Unit2.dfm=D:\Edu\КП\App\RegUnit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.090,D:\Edu\КП\App\Unit2.dfm=D:\Edu\КП\App\MethUnit4.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.484,D:\Edu\КП\App\MethUnit1.dfm=D:\Edu\КП\App\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.466,D:\Edu\КП\App\Unit2.dfm=D:\Edu\КП\App\MethUnit3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.788,D:\Edu\КП\App\Unit2.dfm=D:\Edu\КП\App\DescriptionUnit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.196,D:\Edu\КП\App\Unit2.dfm=D:\Edu\КП\App\MethUnit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.074,D:\Edu\КП\App\Unit2.dfm=D:\Edu\КП\App\MethUnit5.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.466,D:\Edu\КП\App\Unit2.pas=D:\Edu\КП\App\MethUnit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,=C:\Users\u2233m\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.373,D:\Edu\КП\App\ResUnit.pas=D:\Edu\КП\App\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.559,D:\Edu\КП\App\DataUnit.dfm=D:\Edu\КП\App\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.559,D:\Edu\КП\App\DataUnit.pas=D:\Edu\КП\App\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.706,D:\Edu\КП\App\MainUnit.dfm=C:\Users\u2233m\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.463,=D:\Edu\КП\App\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.937,=D:\Edu\КП\App\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.373,D:\Edu\КП\App\ResUnit.dfm=D:\Edu\КП\App\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.783,=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.186,=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.094,=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.706,D:\Edu\КП\App\MainUnit.pas=C:\Users\u2233m\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.483,D:\Edu\КП\App\MethUnit1.pas=D:\Edu\КП\App\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.429,D:\Edu\КП\App\stercore.dproj=C:\Users\u2233m\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
