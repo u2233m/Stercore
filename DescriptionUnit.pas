@@ -33,73 +33,73 @@ var
   DescriptionForm: TDescriptionForm;
 
 implementation
-uses DataUnit;
+uses DataUnit;                                                    //Обьявление используемых форм
 
 {$R *.dfm}
 
-procedure TDescriptionForm.Button1Click(Sender: TObject);
+procedure TDescriptionForm.Button1Click(Sender: TObject);         //Процедура нажатия на кнопку "Методика 1"
 begin
-  DBMemo2.DataField:='Методика 1';
-  DBMemo1.DataField:='Методика 1';
-  Button1.Enabled:=False;
-  Button2.Enabled:=True;
-  Button3.Enabled:=True;
-  Button4.Enabled:=True;
-  Button5.Enabled:=True;
+  DBMemo2.DataField:='Методика 1';                                //Смена названия методики
+  DBMemo1.DataField:='Методика 1';                                //Смена описания методики
+  Button1.Enabled:=False;                                         //=========================================
+  Button2.Enabled:=True;                                          //=========================================
+  Button3.Enabled:=True;                                          //===Запрет/разрешение нажатия на кнопки===
+  Button4.Enabled:=True;                                          //=========================================
+  Button5.Enabled:=True;                                          //=========================================
 end;
 
-procedure TDescriptionForm.Button2Click(Sender: TObject);
+procedure TDescriptionForm.Button2Click(Sender: TObject);         //Процедура нажатия на кнопку "Методика 2"
 begin
-  DBMemo2.DataField:='Методика 2';
-  DBMemo1.DataField:='Методика 2';
-  Button1.Enabled:=True;
-  Button2.Enabled:=False;
-  Button3.Enabled:=True;
-  Button4.Enabled:=True;
-  Button5.Enabled:=True;
+  DBMemo2.DataField:='Методика 2';                                //Смена названия методики
+  DBMemo1.DataField:='Методика 2';                                //Смена описания методики
+  Button1.Enabled:=True;                                          //=========================================
+  Button2.Enabled:=False;                                         //=========================================
+  Button3.Enabled:=True;                                          //===Запрет/разрешение нажатия на кнопки===
+  Button4.Enabled:=True;                                          //=========================================
+  Button5.Enabled:=True;                                          //=========================================
 end;
 
-procedure TDescriptionForm.Button3Click(Sender: TObject);
+procedure TDescriptionForm.Button3Click(Sender: TObject);         //Процедура нажатия на кнопку "Методика 3"
 begin
-  DBMemo2.DataField:='Методика 3';
-  DBMemo1.DataField:='Методика 3';
-  Button3.Enabled:=False;
-  Button2.Enabled:=True;
-  Button1.Enabled:=True;
-  Button4.Enabled:=True;
-  Button5.Enabled:=True;
+  DBMemo2.DataField:='Методика 3';                                //Смена названия методики
+  DBMemo1.DataField:='Методика 3';                                //Смена описания методики
+  Button3.Enabled:=False;                                         //=========================================
+  Button2.Enabled:=True;                                          //=========================================
+  Button1.Enabled:=True;                                          //===Запрет/разрешение нажатия на кнопки===
+  Button4.Enabled:=True;                                          //=========================================
+  Button5.Enabled:=True;                                          //=========================================
 end;
 
-procedure TDescriptionForm.Button4Click(Sender: TObject);
+procedure TDescriptionForm.Button4Click(Sender: TObject);         //Процедура нажатия на кнопку "Методика 4"
 begin
-  DBMemo2.DataField:='Методика 4';
-  DBMemo1.DataField:='Методика 4';
-  Button4.Enabled:=False;
-  Button2.Enabled:=True;
-  Button3.Enabled:=True;
-  Button1.Enabled:=True;
-  Button5.Enabled:=True;
+  DBMemo2.DataField:='Методика 4';                                //Смена названия методики
+  DBMemo1.DataField:='Методика 4';                                //Смена описания методики
+  Button4.Enabled:=False;                                         //=========================================
+  Button2.Enabled:=True;                                          //=========================================
+  Button3.Enabled:=True;                                          //===Запрет/разрешение нажатия на кнопки===
+  Button1.Enabled:=True;                                          //=========================================
+  Button5.Enabled:=True;                                          //=========================================
 end;
 
-procedure TDescriptionForm.Button5Click(Sender: TObject);
+procedure TDescriptionForm.Button5Click(Sender: TObject);         //Процедура нажатия на кнопку "Методика 5"
 begin
-  DBMemo2.DataField:='Методика 5';
-  DBMemo1.DataField:='Методика 5';
-  Button5.Enabled:=False;
-  Button2.Enabled:=True;
-  Button3.Enabled:=True;
-  Button4.Enabled:=True;
-  Button1.Enabled:=True;
+  DBMemo2.DataField:='Методика 5';                                //Смена названия методики
+  DBMemo1.DataField:='Методика 5';                                //Смена описания методики
+  Button5.Enabled:=False;                                         //=========================================
+  Button2.Enabled:=True;                                          //=========================================
+  Button3.Enabled:=True;                                          //===Запрет/разрешение нажатия на кнопки===
+  Button4.Enabled:=True;                                          //=========================================
+  Button1.Enabled:=True;                                          //=========================================
 end;
 
-procedure TDescriptionForm.Button6Click(Sender: TObject);
+procedure TDescriptionForm.Button6Click(Sender: TObject);         //Процедура нажатия на кнопку "Выход"
 begin
-  Close;
+  Close;                                                          //Закрытие формы
 end;
 
-procedure TDescriptionForm.FormCreate(Sender: TObject);
+procedure TDescriptionForm.FormCreate(Sender: TObject);           //Процедура создания формы
 begin
-  Button1.Enabled:=False;
+  Button1.Enabled:=False;                                         //Запрет нажатия на кнопку "Методика 1"
 end;
 
 end.

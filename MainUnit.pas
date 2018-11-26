@@ -24,22 +24,22 @@ var
   MainForm: TMainForm;
 
 implementation
-uses RegUnit, DescriptionUnit, ResUnit, DataUnit;
+uses RegUnit, DescriptionUnit, ResUnit, DataUnit;               //Обьявление используемых форм
 {$R *.dfm}
 
-procedure TMainForm.Button1Click(Sender: TObject);
+procedure TMainForm.Button1Click(Sender: TObject);              //Процедура нажатия на кнопку "Тестирование"
 begin
-  RegForm.ShowModal;
+  RegForm.ShowModal;                                            //Вывод формы регистрации
 end;
 
-procedure TMainForm.Button2Click(Sender: TObject);
+procedure TMainForm.Button2Click(Sender: TObject);              //Процедура нажатия на кнопку "Описание методик"
 begin
-  DescriptionForm.ShowModal;
+  DescriptionForm.ShowModal;                                    //Вывод формы описания методик
 end;
 
-procedure TMainForm.Button3Click(Sender: TObject);
+procedure TMainForm.Button3Click(Sender: TObject);              //Процедура нажатия на кнопку "Результаты"
 begin
-  ResForm.ShowModal;
+  ResForm.ShowModal;                                            //Вывод формы результатов
 end;
 
 end.

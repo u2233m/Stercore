@@ -18,7 +18,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Result;
   private
-  res:integer;
+  res:integer;                                                  //Обьявление счётной переменной
     { Private declarations }
   public
     { Public declarations }
@@ -28,35 +28,35 @@ var
   MethForm5: TMethForm5;
 
 implementation
-uses DataUnit;
+uses DataUnit;                                                  //Обьявление используемых форм
 
 {$R *.dfm}
 
-procedure TMethForm5.Button1Click(Sender: TObject);
+procedure TMethForm5.Button1Click(Sender: TObject);             //Процедура нажатия на кнопку "А"
 begin
-  res:=res+DataModule1.ADOTable6.Fields[4].AsInteger;
-  DataModule1.ADOTable6.Next;
-  if DataModule1.ADOTable6.Eof then
-    begin
-      Result;
-    end;
+  res:=res+DataModule1.ADOTable6.Fields[4].AsInteger;           //Запись баллов в переменную "res
+  DataModule1.ADOTable6.Next;                                   //Смена вопросов/ответов
+  if DataModule1.ADOTable6.Eof then                             //Проверка наличия вопросов
+    begin                                                       //Если вопросы закончились,
+      Result;                                                   //то начнётся процедура
+    end;                                                        //сохранения данных
 end;
 
-procedure TMethForm5.Button2Click(Sender: TObject);
+procedure TMethForm5.Button2Click(Sender: TObject);             //Процедура нажатия на кнопку "Б"
 begin
-  res:=res+DataModule1.ADOTable6.Fields[5].AsInteger;
-  DataModule1.ADOTable6.Next;
-  if DataModule1.ADOTable6.Eof then
-    begin
-      Result;
-    end;
+  res:=res+DataModule1.ADOTable6.Fields[5].AsInteger;           //Запись баллов в переменную "res
+  DataModule1.ADOTable6.Next;                                   //Смена вопросов/ответов
+  if DataModule1.ADOTable6.Eof then                             //Проверка наличия вопросов
+    begin                                                       //Если вопросы закончились,
+      Result;                                                   //то начнётся процедура
+    end;                                                        //сохранения данных
 end;
 
-procedure TMethForm5.Result;
+procedure TMethForm5.Result;                                    //Процедура сахранения данных
 begin
-  DataModule1.ADOTable1.Edit;
-  DataModule1.ADOTable1.Fields[11].AsInteger:=res;
-  DataModule1.ADOTable1.Post;
-  Close;
+  DataModule1.ADOTable1.Edit;                                   //Запрос на редактирование строки в БД
+  DataModule1.ADOTable1.Fields[11].AsInteger:=res;              //Ввод баллов переменной "res" в ячейку БД
+  DataModule1.ADOTable1.Post;                                   //Сохранение строки в БД
+  Close;                                                        //Закрытие формы
 end;
 end.

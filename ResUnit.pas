@@ -20,7 +20,7 @@ var
   ResForm: TResForm;
 
 implementation
-uses DataUnit;
+uses DataUnit;      //Обьявление используемых форм
 {$R *.dfm}
 
 end.

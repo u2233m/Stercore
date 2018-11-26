@@ -23,7 +23,7 @@ type
     procedure Button4Click(Sender: TObject);
     procedure Result;
   private
-  res:integer;
+  res:integer;                                                  //Обьявление счётной переменной
     { Private declarations }
   public
     { Public declarations }
@@ -33,54 +33,54 @@ var
   MethForm4: TMethForm4;
 
 implementation
-uses DataUnit;
+uses DataUnit;                                                  //Обьявление используемых форм
 
 {$R *.dfm}
 
-procedure TMethForm4.Button1Click(Sender: TObject);
+procedure TMethForm4.Button1Click(Sender: TObject);             //Процедура нажатия на кнопку "А"
 begin
-  DataModule1.ADOTable5.Next;
-  if DataModule1.ADOTable5.Eof then
-    begin
-      Result;
-    end;
+  DataModule1.ADOTable5.Next;                                   //Смена вопросов/ответов
+  if DataModule1.ADOTable5.Eof then                             //Проверка наличия вопросов
+    begin                                                       //Если вопросы закончились,
+      Result;                                                   //то начнётся процедура
+    end;                                                        //сохранения данных
 end;
 
-procedure TMethForm4.Button2Click(Sender: TObject);
+procedure TMethForm4.Button2Click(Sender: TObject);             //Процедура нажатия на кнопку "Б"
 begin
-  res:=res+1;
-  DataModule1.ADOTable5.Next;
-  if DataModule1.ADOTable5.Eof then
-    begin
-      Result;
-    end;
+  res:=res+1;                                                   //Запись баллов в переменную "res
+  DataModule1.ADOTable5.Next;                                   //Смена вопросов/ответов
+  if DataModule1.ADOTable5.Eof then                             //Проверка наличия вопросов
+    begin                                                       //Если вопросы закончились,
+      Result;                                                   //то начнётся процедура
+    end;                                                        //сохранения данных
 end;
 
-procedure TMethForm4.Button3Click(Sender: TObject);
+procedure TMethForm4.Button3Click(Sender: TObject);             //Процедура нажатия на кнопку "В"
 begin
-  res:=res+2;
-  DataModule1.ADOTable5.Next;
-  if DataModule1.ADOTable5.Eof then
-    begin
-      Result;
-    end;
+  res:=res+2;                                                   //Запись баллов в переменную "res
+  DataModule1.ADOTable5.Next;                                   //Смена вопросов/ответов
+  if DataModule1.ADOTable5.Eof then                             //Проверка наличия вопросов
+    begin                                                       //Если вопросы закончились,
+      Result;                                                   //то начнётся процедура
+    end;                                                        //сохранения данных
 end;
 
-procedure TMethForm4.Button4Click(Sender: TObject);
+procedure TMethForm4.Button4Click(Sender: TObject);             //Процедура нажатия на кнопку "Г"
 begin
-  res:=res+3;
-  DataModule1.ADOTable5.Next;
-  if DataModule1.ADOTable5.Eof then
-    begin
-      Result;
-    end;
+  res:=res+3;                                                   //Запись баллов в переменную "res
+  DataModule1.ADOTable5.Next;                                   //Смена вопросов/ответов
+  if DataModule1.ADOTable5.Eof then                             //Проверка наличия вопросов
+    begin                                                       //Если вопросы закончились,
+      Result;                                                   //то начнётся процедура
+    end;                                                        //сохранения данных
 end;
 
-procedure TMethForm4.Result;
+procedure TMethForm4.Result;                                    //Процедура сахранения данных
 begin
-  DataModule1.ADOTable1.Edit;
-  DataModule1.ADOTable1.Fields[10].AsInteger:=res;
-  DataModule1.ADOTable1.Post;
-  Close;
+  DataModule1.ADOTable1.Edit;                                   //Запрос на редактирование строки в БД
+  DataModule1.ADOTable1.Fields[10].AsInteger:=res;              //Ввод баллов переменной "res" в ячейку БД
+  DataModule1.ADOTable1.Post;                                   //Сохранение строки в БД
+  Close;                                                        //Закрытие формы
 end;
 end.
